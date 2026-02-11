@@ -1,6 +1,6 @@
 <?php
 
-/* Plugin Name: WooCommerce XML feed for Skroutz & Bestprice
+/* Plugin Name: Skroutz & Bestprice XML feed for WooCommerce
   Plugin URI: https://www.papaki.com
   Description: XML feed creator for Skroutz & BestPrice
   Version: 1.6.9.1

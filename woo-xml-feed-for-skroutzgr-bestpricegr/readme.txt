@@ -1,4 +1,4 @@
-=== WooCommerce XML feed for Skroutz & Bestprice ===
+=== Skroutz & Bestprice XML feed for WooCommerce ===
 Plugin URI: https://www.papaki.com
 Description: XML feed creator for Skroutz & Best Price
 Requires at least: 4.7
