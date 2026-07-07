@@ -23,7 +23,7 @@ Since the 1.6.0 version is a major release, if you face any issues, choose the "
 == Frequently Asked Questions ==
 
 = When in Stock Availability =
-Dropdown  option "When in Stock Availability"   with options will show for all in Stock products 
+Dropdown  option "When in Stock Availability"   with options will show for all in Stock products
 "Available in store / Delivery 1 to 3 days", "Delivery 1 to 3 days", "Delivery 4 to 10 days" as availability
 
 = If Product Attribute: Availability is used =
@@ -34,7 +34,7 @@ Dropdown  option "When in Stock Availability" value "Product Attribute: Availabi
 Dropdown  option "When in Stock Availability" value "Custom Availability" must be used
 
 = If a Product is out of Stock =
-Dropdown  option "If a Product is out of Stock"  with options will 
+Dropdown  option "If a Product is out of Stock"  with options will
 "Include as out of Stock or Upon Request" or "Exclude from feed", "Delivery 1 to 3 days", "Delivery 4 to 10 days"
 
 = If Product Attribute: Out of Stock Availability is used =
@@ -64,7 +64,7 @@ Brands plugins are supported to be shown as manufacturer.
 
 = Add sizes =
 
-To add the size to a product, in order to be printed on the XML feed, add an attribute with Slug "size", Type "Select" and Name of your choice. 
+To add the size to a product, in order to be printed on the XML feed, add an attribute with Slug "size", Type "Select" and Name of your choice.
 Then is created a variable product with this attribute.
 
 If you have stock management enabled on variations, sizes with stock lower or equal to 0 will not be shown on the feed
@@ -76,39 +76,43 @@ If you want to remove items from the feed, you can add a special field in the pr
 
 
 = Backorder =
-If you have enabled backorder and set to notify, the product will be shown as upon order and not in stock. 
+If you have enabled backorder and set to notify, the product will be shown as upon order and not in stock.
 
-If you have selected Yes, the product will be shown as available and in stock. 
+If you have selected Yes, the product will be shown as available and in stock.
 
-If you have selected no to backorder, the product will be not available. 
+If you have selected no to backorder, the product will be not available.
 
 = GTIN plugins support =
 
 If you want to add extra gtin tag (ean, barcode, isbn) in your xml, you can enable the "Enable GTIN Feed" option in the admin panel and then, to select the preferred option of the tag and the  GTIN Source Plugin (either the name of the plugin or the name of the field)
 
-= Split Variable products based on color attributes = 
+= Split Variable products based on color attributes =
 If you want to split your products based on color attribute you should check the "Split variable products by color" option
 
-= Custom Product Id = 
-If you want to have a custom product id (and not the default id from WooCommerce) you can create a special field in the product edit area i.e. "custom_product_id" or to choose from other meta fields that are available. 
-If that field has a value, the product will have this for id or else if it has no value that field, product will have the default id as value in the XML. 
-In order to disable it, just choose the -default- option. 
+= Custom Product Id =
+If you want to have a custom product id (and not the default id from WooCommerce) you can create a special field in the product edit area i.e. "custom_product_id" or to choose from other meta fields that are available.
+If that field has a value, the product will have this for id or else if it has no value that field, product will have the default id as value in the XML.
+In order to disable it, just choose the -default- option.
 
-= Exclude categories from XML = 
-You can add from which categories you want to exclude products from the XML Feed	
+= Exclude categories from XML =
+You can add from which categories you want to exclude products from the XML Feed
 
-= Calculate taxes on product's price = 
+= Calculate taxes on product's price =
 Prices should have included VAT. If you have set up your prices without taxes, choose the "Auto Calculate Price with Tax" in order to auto calculate the price with the tax.
 
-= Product with multiple categories = 
-When a product has multiple categories, it will search for final categories and build the path of one of them. 
-If it hasn't any final category and product has only parent categories, it will build the path of one of them. 
+= Product with multiple categories =
+When a product has multiple categories, it will search for final categories and build the path of one of them.
+If it hasn't any final category and product has only parent categories, it will build the path of one of them.
 (In all paths, has been added the "Home", in order skroutz validator to not throw warning for partial path in case of parent category path)
 
-= Description tag = 
+= Description tag =
 In order to have the description Tag in your xml, you have to add the description in the short description field in your product.
 
 == Changelog ==
+
+= Version 1.7.0.0 =
+Code refactoring.
+
 = Version 1.6.9.1 =
 compatibility with Woocommerce 6.2.1 and wordpress 5.9.1
 
@@ -135,21 +139,21 @@ fix compatibility with brand plugins and variable products
 fix select2 conflict with some templates
 fix issue with weight and different units
 apply exclude from feed in variable products
-update availability statuses  
+update availability statuses
 
 = Version 1.6.3 =
 Changes in category path when product has multiple categories
-Display category id in BestPrice xml 
+Display category id in BestPrice xml
 
 
 = Version 1.6.2 =
 Fix an issue with custom product id and xml production
 
 = Version 1.6.1 =
-Don't display color tag in xml if there is no value 
+Don't display color tag in xml if there is no value
 Fixes a conflict with select2 library
 
-= Version 1.6.0 = 
+= Version 1.6.0 =
 Perfomance improvement
 Split variable product based on color attribute
 Option to calculate taxes on price
@@ -157,7 +161,7 @@ Option to set Custom Product Id
 Exclude Categories from XML Feed
 
 
-= Version 1.5.0 = 
+= Version 1.5.0 =
 Enabled support for GTIN plugins (Now you can have extra field for your ean/barcode/isbn attribute)
 Fixed issues with Availability as product attribute
 
@@ -167,10 +171,10 @@ Fixed issue with size in variable products.
 = Version: 1.4.2 =
 Updated Additional Images format for Bestprice(xml specs v.2.0.3)
 
-= Version: 1.4.1 = 
-Updated translations. 
+= Version: 1.4.1 =
+Updated translations.
 
-= Version: 1.4.0 = 
+= Version: 1.4.0 =
 Additional Images are now supported
 Can now set attributes(Size, color, Manufacturer) to empty if you don't want to import them in the xml
 Fix issue for Brand Plugins to be shown as manufacturer
